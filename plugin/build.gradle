@@ -1,0 +1,20 @@
+plugins {
+    id 'java'
+}
+
+group 'io.github.slimjar.example'
+version '1.0'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compileOnly project(':bootstrap')
+    slim 'com.konghq:unirest-java:3.11.11'
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
+
+slimJar {
+    shade = false
+}

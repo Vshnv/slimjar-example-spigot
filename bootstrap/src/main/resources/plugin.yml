@@ -1,0 +1,3 @@
+name: Example
+version: 1.0
+main: io.github.slimjar.example.spigot.ExamplePlugin
